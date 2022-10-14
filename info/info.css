@@ -6,7 +6,7 @@ nav {
     z-index: 200;
     position: fixed;
     background-color: #555;
-    transform: translateX(-220px);
+    transform: translateX(-240px);
 }
 .menu {
     display: flex;
@@ -59,71 +59,26 @@ header {
 .button a img {
     width: 20px; height: 20px;
 }
-select {
-    border: 1px solid #e5e6e7;
-    border-radius: 5px;
-    display: block;
-    margin: 15px 20px;
-}
 
-/* 옵션 타이틀 */
-.option_title {
+/* info */
+.info .info_title {
     padding: 15px 12px;
     margin-bottom: 11px;
     text-align: center;
 }
-.option_title h5 {
-    margin-bottom: 5px;
-    text-align: left;
+.info .info_title h5 {
     font-weight: bold;
 }
-.option_title span {
+.info .info_content {
+    padding: 15px 20px 20px 20px;
     font-size: 13px;
-    font-weight: 400;
-}
-
-/* 옵션 컨텐츠 */
-.option_content {
-    margin: 18px;
-}
-.option_content .form_group {
-    margin-bottom: 30px;
-}
-.option_content .form_group .control_laberl {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: bold;
-}
-.option_content .form_group .form_control {
-    padding: 6px 12px;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 15px;
-    border: 1px solid #e7eaec;
-}
-.option_content .form_group span {
-    font-size: 14px;
-}
-.option_content .line {
-    border-top: 1px dashed #e5e6e7;
-    height: 1px;
-    margin: 15px;
-}
-button.btn {
-    cursor: pointer;
-    margin-bottom: 5px;
-    background-color: #ffca66;
-    border: 0;
-    border-radius: 5px;
-    padding: 7px 14px;
-    font-weight: 700;
 }
 
 /* footer */
 footer {
     border-top: 1px solid #e7eaec;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 footer .footer {
     margin-left: 15px;
