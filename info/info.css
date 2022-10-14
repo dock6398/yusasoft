@@ -19,7 +19,7 @@ nav {
 }
 .menu .nav_title {
     padding: 35px 20px;
-    background-image: url(./images/background.png);
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
