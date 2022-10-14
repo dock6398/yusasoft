@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yuzasoft</title>
+    <link rel="stylesheet" href="../common/minireset.css ">
+    <link rel="stylesheet" href="./yuzasoft.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <!-- 메뉴창 -->
+            <nav>
+                <div class="navbar">
+                    <ul class="menu">
+                        <li class="nav_title">
+                            <span>
+                                <img src="./images/logo.png" alt="logo">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/bell.png" alt="bell">
+                                <span>공지사항</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/edit.png" alt="edit">
+                                <span>금시세보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/setting.png" alt="setting">
+                                <span>환경설정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/circle.png" alt="circle">
+                                <span>개인정보보호정책</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- 헤더영역 -->
+            <header>
+                <div class="button">
+                    <a href="#">
+                        <img src="./images/menu.png" alt="menu">
+                    </a>
+                </div>
+                <select class="type">
+                    <option value="0">순금</option>
+                    <option value="1">백금</option>
+                    <option value="2">은</option>
+                </select>
+            </header>
+
+            <!-- 메인 영역 -->
+            <main>
+
+                <!-- 시세 영역 -->
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="ibox">
+                                <div class="ibox_title">
+                                    <h5>오늘
+                                        <l class="typename">순금</l>
+                                        시세</h5>
+                                    <span class="label" id="today">2022.10.12 12:50</span>
+                                </div>
+                                <div class="ibox_content">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>330,000
+                                                <span>1000
+                                                    <img src="./images/down.png" alt="down">
+                                                </span>
+                                            </h1>
+                                            <div class="text_navy">
+                                                <small>
+                                                    <l class="typename">순금</l>
+                                                    구매 가격 (3.75g)
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h1>295,000
+                                                <span>500
+                                                    <img src="./images/down.png" alt="down">
+                                                </span>
+                                            </h1>
+                                            <div class="text_navy">
+                                                <small>
+                                                    <l class="typename">순금</l>
+                                                    판매 가격 (3.75g)
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <!-- 시세 그래프 영역 -->
+                        <div class="col-lg-8">
+                            <div class="ibox ">
+                                <div class="ibox_content">
+                                    <iframe class="chartjs-hidden-iframe"></iframe>
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- 구매판매 표 -->
+                        <div class="col-sm-4">
+                            <div class="ibox ">
+                            <div class="ibox_content">
+                               <div class="row">
+                                   <div class="col-6">
+                                       <h5 class="top">현재순금구매 (3.75g)</h5>
+                                       <h1 class="won" id="current_pure_gold_buy2">330,000</h1>
+                                   </div>
+                                   <div class="col-6">
+                                       <h5 class="top">현재순금판매 (3.75g)</h5>
+                                       <h1 class="won" id="current_pure_gold_sell2">295,000</h1>
+                                   </div>
+                               </div>
+   
+   
+                               <table class="table">
+                                   <tbody>
+                                   <tr>
+                                       <td>
+                                           <strong></strong>
+   
+                                       </td>
+                                       <td>
+                                           <strong>구매</strong>
+   
+                                       </td>
+                                       <td>
+                                           <strong>판매</strong>
+                                       </td>
+   
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <strong>18k금시세</strong>
+                                       </td>
+                                       <td>
+                                           <strong></strong>
+                                       </td>
+                                       <td>
+                                           <strong id="goldsell18k">213,900</strong>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <strong>14k금시세</strong>
+                                       </td>
+                                       <td>
+                                           <strong></strong>
+                                       </td>
+                                       <td>
+                                           <strong id="goldsell14k">165,200</strong>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <strong>백금시세</strong>
+                                       </td>
+                                       <td>
+                                           <strong id="whitegoldbuy">173,000</strong>
+                                       </td>
+                                       <td>
+                                           <strong id="whitegoldsell">145,000</strong>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <strong>은시세</strong>
+                                       </td>
+                                       <td>
+                                           <strong id="silverbuy">3,870</strong>
+                                       </td>
+                                       <td>
+                                           <strong id="silversell">3,140</strong>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                           </div>
+                       </div>
+                       <div class="line"></div>
+                        <!-- 구매 그래프 -->
+                        <div class="col-lg-4">
+                            <div class="ibox ">
+                                <div class="ibox_title">
+                                    <h5><l class="typename">순금</l>구매</h5>
+                                    <span class="label">월평균</span>
+                                </div>
+                                <div class="ibox_content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1 class="no-margins" id="buypuregold">325,300</h1>
+                                            <div class="font-bold text-navy">
+                                                <iframe class="chartjs-hidden-iframe"></iframe>
+                                                <canvas id="barChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 판매 그래프 -->
+                        <div class="col-lg-4">
+                            <div class="ibox ">
+                                <div class="ibox_title">
+                                    <h5><l class="typename">순금</l>판매</h5>
+                                    <span class="label label-primary float-right">월평균</span>
+                                </div>
+                                <div class="ibox_content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1 class="no-margins" id="sellpuregold">296,687</h1>
+                                            <div class="font-bold text-navy">
+                                                <iframe class="chartjs-hidden-iframe"></iframe>
+                                                <canvas id="barChart2"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </main>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        © karam1193 Inc. All Rights Reserved. 
+                        <div style="font-size:10px">Icons made by 
+                            <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
+                            from 
+                            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+                            is licensed by 
+                            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

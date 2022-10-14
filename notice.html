@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notice</title>
+    <link rel="stylesheet" href="../common/minireset.css">
+    <link rel="stylesheet" href="./notice.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- 메뉴창 -->
+            <nav>
+                <div class="navbar">
+                    <ul class="menu">
+                        <li class="nav_title">
+                            <span>
+                                <img src="./images/logo.png" alt="logo">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/bell.png" alt="bell">
+                                <span>공지사항</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/edit.png" alt="edit">
+                                <span>금시세보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/setting.png" alt="setting">
+                                <span>환경설정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/circle.png" alt="circle">
+                                <span>개인정보보호정책</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- 헤더영역 -->
+            <header>
+                <div class="button">
+                    <a href="#">
+                        <img src="./images/menu.png" alt="menu">
+                    </a>
+                </div>
+            </header>
+
+            <!-- 메인 -->
+            <main>
+                <!-- 공지사항 -->
+                <div class="notice">
+                    <!-- title -->
+                    <div class="notice_title">
+                        <h5>공지사항</h5>
+                    </div>
+                    <div class="notice_body">
+                        <div class="row">
+                            <div class="notice_data">
+                                <div class="dataTable_scroll">
+                                    <div class="dataTable_scrollHead">
+                                        <div class="dataTable_scrollHeadInner">
+                                            <table class="table table_striped">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_desc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="등록일 :  오름차순 정렬" aria-sort="descending">등록일</th>
+                                                        <th style="width: 184px;" class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="제목 :  오름차순 정렬">제목</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="dataTable_scrollBody">
+                                        <table class="table table-striped" id="datatable" role="grid">
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2021-01-26</td>
+                                                <td>안녕하세요 유자골드입니다.</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2019-08-31</td>
+                                                <td>금시세를 1g단위로 설정할수 있는 기능이 추가되었습니다.</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2019-08-26</td>
+                                                <td>홈화면 위젯기능이 추가되었습니다. ! </td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2019-08-17</td>
+                                                <td>공지사항을 오픈했습니다.</td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="dataTable_filter">
+                                        <label>
+                                            검색 :
+                                            <input type="search" class="form_control form-control-sm" placeholder="" aria-controls="datatable">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="dataTable_paginate">
+                                    <ul class="pagination">
+                                        <li class="paginate_button prev">
+                                            <a href="#" aria-controls="datatable" data-dt-idx="0" tabindex="0" class="page-link">이전</a>
+                                        </li>
+                                        <li class="paginate_button active">
+                                            <a href="#" aria-controls="datatable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                        </li>
+                                        <li class="paginate_button next">
+                                            <a href="#" aria-controls="datatable" data-dt-idx="2" tabindex="0" class="page-link">다음</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        © karam1193 Inc. All Rights Reserved. 
+                        <div style="font-size:10px">Icons made by 
+                            <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
+                            from 
+                            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+                            is licensed by 
+                            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

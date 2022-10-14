@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* 메뉴 */
+nav {
+    width: 220px; height: 100vh;
+    z-index: 200;
+    position: fixed;
+    background-color: #555;
+    transform: translateX(-220px);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.menu .nav_title {
+    padding: 35px 20px;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.menu .nav_title span {
+    display: block;
+    text-align: center;
+    width: 180px;
+}
+.menu .nav_title img {
+    width: 100px; height: 80px;
+}
+.menu a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding: 35px 20px 35px 25px;
+}
+.menu a img {
+    width: 15px; height: 15px;
+    vertical-align: unset;
+}
+
+/* 헤더 영역 */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+}
+.button a {
+    background-color: #ffca66;
+    display: block;
+    margin: 15px 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.button a img {
+    width: 20px; height: 20px;
+}
+select {
+    border: 1px solid #e5e6e7;
+    border-radius: 5px;
+    display: block;
+    margin: 15px 20px;
+}
+
+/* 시세 영역 */
+.content .row .ibox_title {
+    padding: 17px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .ibox_title h5 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #222;
+}
+.content .row .ibox_title .label {
+    background-color: #2463B3;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.content .row .ibox_content {
+    padding: 17px 12px;
+}
+.content .row .ibox_content .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .row .ibox_content .row .col-md-6 {
+    width: 100%;
+    max-width: 415px;
+    margin: 10px 40px 20px;
+    background-color: #ffca66;
+    border-radius: 5px;
+    padding: 14px;
+}
+.content .row .ibox_content .row .col-md-6 h1 {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .ibox_content .row .col-md-6 h1 span {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #0000FF;
+    /* color: red; */
+}
+.content .row .ibox_content .row .col-md-6 h1 img {
+    width: 25px; height: 29px;
+    margin-left: 5px;
+}
+.content .row .ibox_content .row .col-md-6 .text_navy {
+    font-weight: 700;
+    color: #222;
+}
+.line {
+    border-bottom: 1px dotted #888;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 시세 그래프 */
+.col-lg-8 .ibox .ibox_content {
+    padding: 20px;
+    height: 300px;
+}
+
+/* 구메 & 판매 금액 표 */
+.col-sm-4 {
+    margin-bottom: 30px;
+}
+.col-sm-4 .ibox .ibox_content {
+    margin: 20px;
+    background-color: #ffca66;
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 415px;
+}
+.col-sm-4 .ibox .ibox_content .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+.col-sm-4 .ibox .ibox_content .row .col-6 {
+    text-align: center;
+}
+.col-sm-4 .ibox .ibox_content .row .col-6 .top {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.col-sm-4 .ibox .ibox_content .row .col-6 .won {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+}
+.col-sm-4 .ibox .ibox_content .table {
+    width: 100%;
+}
+.col-sm-4 .ibox .ibox_content .table tbody tr {
+    border-bottom: 1px solid #ececec;
+}
+.col-sm-4 .ibox .ibox_content .table tbody tr:last-child {
+    border: none;
+}
+.col-sm-4 .ibox .ibox_content .table tbody td {
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 구매 & 판매 시세 그래프 */
+.col-lg-4 {
+    margin-top: 15px;
+}
+.col-lg-4 .ibox .ibox_title {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.col-lg-4 .ibox .ibox_title h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.col-lg-4 .ibox .ibox_title .label {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #2463B3;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: #fff;
+}
+.col-lg-4 .ibox .ibox_content h1 {
+    display: none;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #e7eaec;
+    padding: 20px;
+}
+footer .footer {
+    margin-left: 15px;
+    height: 20px;
+}
+footer .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+}

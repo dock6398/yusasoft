@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>option</title>
+    <link rel="stylesheet" href="../common/minireset.css">
+    <link rel="stylesheet" href="./option.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- 메뉴창 -->
+            <nav>
+                <div class="navbar">
+                    <ul class="menu">
+                        <li class="nav_title">
+                            <span>
+                                <img src="./images/logo.png" alt="logo">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/bell.png" alt="bell">
+                                <span>공지사항</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/edit.png" alt="edit">
+                                <span>금시세보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/setting.png" alt="setting">
+                                <span>환경설정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/circle.png" alt="circle">
+                                <span>개인정보보호정책</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- 헤더영역 -->
+            <header>
+                <div class="button">
+                    <a href="#">
+                        <img src="./images/menu.png" alt="menu">
+                    </a>
+                </div>
+                <select class="type">
+                    <option value="0">순금</option>
+                    <option value="1">백금</option>
+                    <option value="2">은</option>
+                </select>
+            </header>
+
+            <!-- 환경설정 -->
+            <main>
+                <!-- 옵션 타이틀 -->
+                <div class="option_title">
+                    <h5>환경설정</h5>
+                    <span>기준치를 작성해서 저장을 해두시면 알람을 받으실 수 있습니다.</span>
+                </div>
+
+                <!-- 옵션 컨텐츠 -->
+                <div class="option_content">
+                    <form method="get" class="form_horizontal">
+                        <div class="form_group">
+                            <label class="control_laberl">단위</label>
+                            <div class="select_box">
+                                <select class="form_control" id="type">
+                                    <option value="0">1돈(3.75g)</option>
+                                    <option value="1">1g</option>
+                                </select>
+                                <span>구매를 희망하시는 단위를 선택해주세요</span>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="control_laberl">순금구매</label>
+                            <div class="input_box">
+                                <input type="text" class="form_control">
+                                <span>구매를 희망하시는 금액을 적어주세요</span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="form_group">
+                            <label class="control_laberl">순금판매</label>
+                            <div class="input_box">
+                                <input type="text" class="form_control">
+                                <span>판매를 희망하시는 금액을 적어주세요</span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="form_group">
+                            <label class="control_laberl">매일 시세 알림 받기</label>
+                            <div class="input_box">
+                                <input type="checkbox" value="1" class="checkbox">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn">저장</button>
+                </div>
+            </main>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        © karam1193 Inc. All Rights Reserved. 
+                        <div style="font-size:10px">Icons made by 
+                            <a href="https://www.freepik.com/" title="Freepik">Freepik</a> 
+                            from 
+                            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+                            is licensed by 
+                            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
